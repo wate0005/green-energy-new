@@ -1,0 +1,387 @@
+/*
+Colours used:
+    bright green ("green") - #008000 - rgb 0 128 0
+    dark green ("darkgreen") - #006400 - rgb 0 100 0 
+    grey - #636563 - rgb 99 101 99 
+    light grey - #c1c3c1 - rgb 193 195 193 
+*/
+
+
+header, section, footer {
+    margin: 0 auto;
+}
+body {
+    font-size: .618rem;
+    line-height: 1.41;
+    font-family: 'Mallanna', 'arial', sans-serif;
+    background-image: url("../img/ground-fern-faded.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-size: cover;
+    background-color: rgba(193,195,193,0.7);
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.green-logo {
+    height: auto;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px 0 0 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* nav bar */
+header {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+header nav ul {
+    padding: 0 0 18px 0;
+}
+header nav ul li {
+    list-style: none;
+    text-align: center;
+    padding: 11px;
+}
+header nav ul li a {
+    color: #008000;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'IM Fell DW Pica', 'Times', serif;
+}
+header nav ul li a:hover {
+    color: black;
+}
+
+/* image slider */
+.masthead {
+    background-image: url("../img/energy-turbines-sm-faded.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #008000;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.mh-image {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    transition: opacity 1s ease-out;
+    border: none;
+}
+.mh-image img {
+    border: none;
+    padding: 27px 0 0 0;
+}
+figcaption {
+    z-index: 50;
+    font-family: 'IM Fell DW Pica', 'Times', serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: .1rem;
+}
+figure {
+    text-align: center;
+}
+
+/* information section */
+.main-content {
+    max-width: 100rem;
+    margin: 0 auto;
+    width: 85%;
+    clear: both;
+}
+.main-content h1 {
+    color: #006400;
+    font-family: 'IM Fell DW Pica', 'Times', serif;
+    letter-spacing: .07rem;
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 34px 0 7px 0;
+    margin: 0;
+}
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+.info {
+    border: 1px solid rgba(0,82,33,0.7);
+    background-color: rgba(0,0,0,.5);
+    padding: 25px 22px 15px 22px;
+    margin: 25px auto 40px auto; 
+    text-align: center;
+    height: auto;
+}
+.feedback {
+    float: none;
+    clear: both;
+    background-color: rgba(250,250,250,0.0);
+    width: 90%;
+    margin: 7px auto;
+    text-align: left;
+    padding: 5px 8px;
+}
+.feedback img {
+    height: auto;
+    max-width: 100%;
+    border: 1px solid rgba(250,250,250,0.3);
+}
+.feedback p {
+    padding-top: 20px;
+    color: white;
+}
+.container {
+    margin: 2px auto 9px auto;
+    text-align: center;
+    display: inline-block;
+    border: 0;
+}
+.container button {
+    background-color: rgba(250,250,250,0.0);
+    padding: 1rem;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px auto;
+    width: 65px;
+    transition: 200ms all ease-in;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+    border: 0;
+}
+.container button:last-child {
+    margin: 5px auto;
+}
+.container button:hover {
+    opacity:.4;
+    border: 0;
+}
+#active {
+    opacity:.4;
+    border: 0;
+}
+.icon-a, .icon-b, .icon-c {
+    color: rgba(0,0,0,.0);
+    background-repeat: no-repeat;
+    border: 0;
+}
+.active-link {
+    opacity: .2;
+    border: 0;
+}
+.icon-a {
+    background-image: url("../img/icon1.png");
+}
+.icon-b {
+    background-image: url("../img/icon2.png");
+}
+.icon-c {
+    background-image: url("../img/icon3.png");
+}
+
+/* footer */
+footer {
+    background-color: rgba(0,0,0,.8);
+    height: 120px;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+footer p {
+    color: #c1c3c1;
+    font-size: .7rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+footer a {
+    color: #c1c3c1;
+    font-size: .7rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+footer a:hover {
+    color: #636563;
+}
+footer ul {
+    margin: 0 auto 5px auto;
+    text-align: center;
+    padding: 38px 0 22px 0;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 4px auto 0 auto;
+    padding: 0 9px; 
+}
+footer ul li a {
+    color: #c1c3c1;
+    font-size: 1.5rem;
+    padding: 0 5px 0 5px;
+    text-align: center;
+}
+footer ul li a:hover {
+    color: #636563;
+}
+
+
+
+@media screen and (min-width: 35rem)  {
+    
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    /* nav bar */
+    header {
+        height: 60px;  
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li {
+        display: inline-block;
+        padding: 5px 20px 30px 20px;
+    }
+
+    /* image slider */
+    figcaption {
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+    }
+    .masthead {
+        background-image: url("../img/energy-turbines-faded.png");
+    }
+
+    /* information section */
+    .feedback img {
+        height: auto;
+        width: 55%;
+    }
+    .feedback p {
+        float: right;
+        width: 36%;
+        text-align: left;
+        margin-left: 26px;
+        padding-top: 0;
+    }
+}
+
+
+@media screen and (min-width: 60rem)  {
+    
+    * {
+        text-align: left;
+    }
+    .wrapper {
+        text-align: left;
+    }
+    body {
+        font-size: 1.618rem;
+        line-height: 1.59;
+    }
+    .green-logo {
+        margin-left: 55px;
+    }
+
+    /* nav bar */   
+    header nav ul {
+        margin: 0  0 0 80px;
+        text-align: left;
+    }
+
+    /* image slider */
+    .slider {
+        margin: 0;
+    }
+    .masthead {
+        background-size: none;
+        text-align: left;
+        margin-top: 20px;
+    }
+    figure {
+        text-align: left;
+        margin: 26px 0 0 90px;
+    }
+    figcaption {
+        text-align: left;
+        margin: 60px 0 0 50px;
+        transform: none;
+        float: left;
+    }
+    .mh-image {
+        float: left;
+    }
+    .mh-image img {
+        float: left;
+    }
+
+    /* information section */
+    .feedback {
+        float: left;
+        clear: none;
+        width: calc(100% - 160px);
+        margin: 12px;
+    }
+    .feedback img {
+        width: 28%;
+    }
+    .feedback p {
+        width: 66%;
+        margin-top: 0;
+    }
+    .main-content {
+        margin: 25px 0 25px 100px;
+    }
+    .main-content h1 {
+        text-align: left;
+    }
+    .container {
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    .container button {
+        margin: 0 0 1rem 0;
+        text-align: left;
+        display: block;
+        float: none;
+    }
+    .container button:last-child {
+        margin: 0;
+    }
+    .main-content h1 {
+        padding: 14px 0 10px 0;
+    }
+    
+    /* footer */
+    footer ul, footer p, footer a {
+        text-align: left;
+        float: left;
+    }
+    footer p {
+        margin: 45px 0 0 60px;  
+    }
+    footer ul {
+        margin-left: 86px;
+    }   
+}
